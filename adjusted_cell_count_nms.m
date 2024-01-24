@@ -62,7 +62,7 @@ marked(bw4) = imageData(bw4);
         x=centroids(n,1);%x value of centroid
         y=centroids(n,2);%y value of centroid
 
-        cropped = imcrop(imageData,[x-50 y-50 99 99]); %crop a 90X90 window around the x and y coordinates
+        cropped = imcrop(imageData,[x-50 y-50 99 99]); %crop a 100X100 window around the x and y coordinates
         filename=sprintf('%s_%d_%s_%d.tif','CATEGORY',k,'cell',n); %create name of image file (rename category)
         newname=string(filename);
         names(n,k)=newname;
